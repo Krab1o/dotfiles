@@ -1,0 +1,26 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias kssh='kitten ssh'
+PS1='[\u@\h \W]\$ '
+
+alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+export SUDO_EDITOR="nvim"
+export MANPAGER='nvim +Man!'
+
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval $(ssh-agent -s)
+fi
+
+# `ssh-add -l > /dev/null 2>&1 || ssh-add ~/.ssh/id_ed25519`
