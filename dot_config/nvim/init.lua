@@ -329,7 +329,14 @@ require('lazy').setup({
         ltex_plus = {},
         marksman = {},
         postgres_lsp = {},
-        pylyzer = {},
+        pyright = {}, -- or pylsp / pylyzer (optional, but common)
+        ruff = {
+          init_options = {
+            settings = {
+              args = {}, -- Optional: pass extra CLI flags to Ruff
+            },
+          },
+        },
         rust_analyzer = {},
         -- typst_lsp = {},
         zls = {},
