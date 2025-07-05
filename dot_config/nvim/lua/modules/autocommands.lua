@@ -36,3 +36,17 @@ vim.api.nvim_create_autocmd('FileType', {
     vim.cmd 'wincmd L'
   end,
 })
+
+vim.o.autoread = true
+vim.api.nvim_create_autocmd({ 'BufEnter', 'CursorHold', 'CursorHoldI', 'FocusGained' }, {
+  command = "if mode() != 'c' | checktime | endif",
+  pattern = { '*' },
+})
+-- vim.api.nvim_create_autocmd('FocusGained', {
+--   callback = function()
+--     local manager_avail, neotree = pcall(require, 'neo-tree.sources.manager')
+--     if manager_avail then
+--       neotree.refresh(require('neo-tree.utils').get_current_node().source)
+--     end
+--   end,
+-- })

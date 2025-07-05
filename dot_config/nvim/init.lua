@@ -326,9 +326,13 @@ require('lazy').setup({
         -- java_language_server = {},
         jsonls = {},
         ltex = {},
-        ltex_plus = {},
+        -- ltex_plus = {},
         marksman = {},
-        postgres_lsp = {},
+        -- postgres_lsp = {
+        --   cmd = { 'postgrestools', 'lsp-proxy' },
+        --   filetypes = { 'sql' },
+        --   root_markers = { 'postgrestools.jsonc' },
+        -- },
         pyright = {}, -- or pylsp / pylyzer (optional, but common)
         ruff = {
           init_options = {
@@ -348,6 +352,12 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+        -- sqls = {
+        --   settings = {
+        --     sqls = {},
+        --   },
+        -- },
+        -- sqlfmt = {},
 
         lua_ls = {
           -- cmd = { ... },
@@ -440,8 +450,11 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         go = { 'goimports', 'gofumpt' },
+        rust = { 'rustfmt', lsp_format = 'fallback' },
+
         -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
+        python = { 'isort', 'black' },
+        sql = { 'pgformatter' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
