@@ -6,7 +6,8 @@ return {
     'nvim-treesitter/nvim-treesitter',
   },
   opts = {
-    -- lsp_keymaps = false,
+    gofmt = 'golines', -- 👈 use golines instead of gofmt
+    max_line_len = 100, -- optional: max length before breaking   -- lsp_keymaps = false,
     -- other options
   },
   config = function(lp, opts)

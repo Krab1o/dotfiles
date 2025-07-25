@@ -322,6 +322,15 @@ require('lazy').setup({
         eslint = {},
         gitlab_ci_ls = {},
 
+        -- gopls = {
+        --   usePlaceholders = true,
+        --   completeUnimported = true,
+        --   semanticTokens = true,
+        --   hints = {
+        --     parameterNames = true,
+        --   },
+        -- },
+
         html = {},
         -- java_language_server = {},
         jsonls = {},
@@ -449,7 +458,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        go = { 'goimports', 'gofumpt' },
+        go = { 'goimports', 'gofumpt', 'golines' },
         rust = { 'rustfmt', lsp_format = 'fallback' },
 
         -- Conform can also run multiple formatters sequentially
