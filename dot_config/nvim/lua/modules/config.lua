@@ -2,6 +2,8 @@
 -- and may be specified separately
 
 -- Tab setting
+
+-- spaces with 2 length
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'lua' },
   callback = function()
@@ -12,8 +14,20 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
+-- spaces with 4 length
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'go', 'cpp', 'hpp', 'c', 'h' },
+  pattern = { 'cpp', 'hpp', 'c', 'h' },
+  callback = function()
+    vim.bo.tabstop = 4
+    vim.bo.shiftwidth = 4
+    vim.bo.softtabstop = 4
+    vim.bo.expandtab = true
+  end,
+})
+
+-- tabs with 4 length
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'go' },
   callback = function()
     vim.bo.tabstop = 4
     vim.bo.shiftwidth = 4

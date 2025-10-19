@@ -15,12 +15,12 @@ export SUDO_EDITOR="nvim"
 export MANPAGER='nvim +Man!'
 
 export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
+# export PATH="$GOPATH/bin:$PATH"
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 if [ -z "$SSH_AUTH_SOCK" ]; then
-    eval $(ssh-agent -s)
+	eval $(ssh-agent -s)
 fi
 
 # `ssh-add -l > /dev/null 2>&1 || ssh-add ~/.ssh/id_ed25519`

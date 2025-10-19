@@ -14,9 +14,10 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    close_if_last_window = true,
     filesystem = {
       filtered_items = {
-        visible = true,
+        visible = false,
         show_hidden_count = true,
         hide_dotfiles = false, -- 👈 show dotfiles like .git, .env, etc.
         hide_gitignored = false, -- optional: show gitignored files too

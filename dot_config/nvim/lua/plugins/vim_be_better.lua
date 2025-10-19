@@ -1,3 +1,4 @@
+-- Tutorial for practicing Nvim
 return {
   'szymonwilczek/vim-be-better',
   config = function()
