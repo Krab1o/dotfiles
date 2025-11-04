@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd('FileType', {
 
 -- spaces with 4 length
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'cpp', 'hpp', 'c', 'h' },
+  pattern = { 'hyprlang', 'rasi', 'jsonc', 'css', 'scss', 'xml', 'cpp', 'hpp', 'c', 'h' },
   callback = function()
     vim.bo.tabstop = 4
     vim.bo.shiftwidth = 4
@@ -27,11 +27,11 @@ vim.api.nvim_create_autocmd('FileType', {
 
 -- tabs with 4 length
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'go' },
+  pattern = { 'go', 'sh' },
   callback = function()
     vim.bo.tabstop = 4
     vim.bo.shiftwidth = 4
     vim.bo.softtabstop = 4
-    vim.bo.expandtab = true
+    -- vim.bo.expandtab = true
   end,
 })

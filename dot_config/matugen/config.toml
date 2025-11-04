@@ -1,0 +1,32 @@
+[config]
+# Whether to set the wallpaper or not
+
+[config.wallpaper]
+# The base command to run for applying the wallpaper, shouldn't have spaces in it.
+command = "swww"
+set = true
+arguments = ["img", "--transition-type", "center"]
+
+# The arguments that will be provided to the command.
+# Keywords like {{ mode }} or anything that works inside of hooks doesn't work here.
+# The last argument will be the image path.
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors/colors.conf'
+post_hook = 'hyprctl reload'
+#
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors/colors.conf'
+post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors/matugen.rasi'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors.css.template'
+output_path = '~/.config/waybar/colors/colors.css'
+# # place hook for reloading waybar theme
+post_hook = 'pkill waybar; waybar & disown'

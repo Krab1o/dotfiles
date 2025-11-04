@@ -47,6 +47,10 @@ require('lazy').setup({
     { import = 'lsp' },
   },
 
+  -- require('transparent').clear_prefix 'lualine',
+  -- require('transparent').clear_prefix 'NeoTree',
+  -- require('transparent').clear_prefix 'BufferLine',
+
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
