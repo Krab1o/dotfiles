@@ -89,8 +89,20 @@ alias kssh='kitten ssh'
 # PS1='[\u@\h \W]\$ '
 
 alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+
 export SUDO_EDITOR="nvim"
+export EDITOR="nvim"
 export MANPAGER='nvim +Man!'
+
+alias vim='nvim'
+alias nv='nvim'
+alias sedit='sudo -e'
+
+alias la='ls -lhA'
+
+PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.config/rofi/scripts:$PATH"
+export PATH
 #
 # export GOPATH="$HOME/go"
 # # export PATH="$GOPATH/bin:$PATH"
