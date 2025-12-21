@@ -1,0 +1,50 @@
+{
+    // ===== BAR =====
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 24,
+    "margin": 0,
+    // ===== MODULES =====
+    "modules-left": [
+        "hyprland/workspaces"
+        // "hyprland/window",
+    ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "hyprland/language",
+        "clock"
+        // "tray"
+    ],
+    // ===== WORKSPACES =====
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true
+    },
+    // ===== CPU =====
+    "cpu": {
+        "format": "{usage}%",
+        "tooltip": false,
+        "interval": 3
+    },
+    // ===== MEMORY =====
+    "memory": {
+        "format": "{used:0.1f}/{total:0.1f}G",
+        "interval": 3
+    },
+    // ===== LANGUAGE =====
+    "hyprland/language": {
+        "format": "{short}",
+        "tooltip": false
+    },
+    // ===== CLOCK =====
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+    // ===== TRAY =====
+    "tray": {
+        "icon-size": 16,
+        "spacing": 6
+    }
+}

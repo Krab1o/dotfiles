@@ -1,0 +1,86 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #000000;
+    color: #bbbbbb;
+}
+
+/* ===== WORKSPACES (sway-like) ===== */
+
+#workspaces {
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    margin: 0;
+    min-width: 0;
+    border-radius: 0;
+
+    color: #888888;
+    background: transparent;
+
+    font-weight: normal;
+}
+
+/* Active workspace */
+#workspaces button.active {
+    color: white;
+    background: #222222;
+}
+
+/* #workspaces button.active { */
+/*     padding: 0 18px; */
+/*     background-color: @secondary_container; */
+/*     opacity: 1; */
+/*     opacity: 0.9; */
+/* } */
+
+/* Urgent workspace */
+#workspaces button.urgent {
+    color: white;
+    background: palevioletred;
+}
+
+/* #workspaces button.urgent { */
+/*     background-color: @error; */
+/*     opacity: 1; */
+/* } */
+
+/* Disable hover effects */
+#workspaces button:hover {
+    background: inherit;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* #workspaces button.focused { */
+/*     background: @primary; */
+/*     color: @on_primary; */
+/*     border-bottom: 3px solid white; */
+/*     box-shadow: inset 0 -3px #ffffff; */
+/* } */
+
+#clock,
+#cpu,
+#memory,
+#language,
+#tray {
+    padding: 0 6px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
