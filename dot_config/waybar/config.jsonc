@@ -13,8 +13,8 @@
         "cpu",
         "memory",
         "hyprland/language",
-        "clock"
-        // "tray"
+        "clock",
+        "tray"
     ],
     // ===== WORKSPACES =====
     "hyprland/workspaces": {
