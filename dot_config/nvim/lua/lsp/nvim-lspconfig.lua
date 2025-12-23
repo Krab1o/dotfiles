@@ -208,19 +208,6 @@ return {
       dockerls = {},
       eslint = {},
       gitlab_ci_ls = {},
-      -- gopls = {
-      --   analyses = {
-      --     unusedparams = true,
-      --   },
-      --   staticcheck = true,
-      --   usePlaceholders = true,
-      --   completeUnimported = true,
-      --   semanticTokens = true,
-      --   hints = {
-      --     parameterNames = true,
-      --   },
-      --   gofumpt = true,
-      -- },
 
       gopls = {},
 
@@ -246,6 +233,7 @@ return {
       rust_analyzer = {},
       -- typst_lsp = {},
       zls = {},
+
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       --
       -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -315,5 +303,22 @@ return {
         end,
       },
     }
+
+    vim.lsp.config.hyprlang = {
+      -- vim.lsp.config {
+      cmd = { 'hyprls' },
+      filetypes = { 'hyprlang' },
+      root_dir = function()
+        return vim.fn.expand '~/.config/hypr'
+      end,
+      settings = {
+        hyprls = {
+          preferIgnoreFile = false,
+          ignore = { 'hyprlock.conf', 'hypridle.conf' },
+        },
+      },
+    }
+
+    vim.lsp.enable 'hyprlang'
   end,
 }

@@ -1,9 +1,10 @@
 {
     // ===== BAR =====
-    "layer": "bottom",
     "position": "bottom",
+    "layer": "bottom",
     "height": 24,
     "margin": 0,
+    // "output": "",
     // ===== MODULES =====
     "modules-left": [
         "hyprland/workspaces"
