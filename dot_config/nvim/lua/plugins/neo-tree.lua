@@ -21,8 +21,8 @@ return {
       filtered_items = {
         visible = true,
         show_hidden_count = true,
-        hide_dotfiles = false, -- 👈 show dotfiles like .git, .env, etc.
-        hide_gitignored = false, -- optional: show gitignored files too
+        hide_dotfiles = false,
+        hide_gitignored = false,
       },
       window = {
         mappings = {

@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd('FileType', {
 
 -- spaces with 4 length
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'hyprlang', 'rasi', 'jsonc', 'css', 'scss', 'xml', 'cpp', 'hpp', 'c', 'h' },
+  pattern = { 'hyprlang', 'rasi', 'jsonc', 'css', 'scss', 'xml', 'cpp', 'hpp', 'c', 'h', 'sql' },
   callback = function()
     vim.bo.tabstop = 4
     vim.bo.shiftwidth = 4
