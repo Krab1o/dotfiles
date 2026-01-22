@@ -5,7 +5,7 @@
 
 -- spaces with 2 length
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'lua' },
+  pattern = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'lua', 'just' },
   callback = function()
     vim.bo.tabstop = 2 -- visible tab width
     vim.bo.shiftwidth = 2 -- indent width

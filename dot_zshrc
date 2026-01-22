@@ -103,10 +103,9 @@ alias la='ls -lhA'
 alias ovpn-sync="rsync -avz --delete vpnserv1:/home/vpner/openvpn/configs/ ~/openvpn-configs/"
 
 export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
 
-PATH="$HOME/.local/bin:$PATH"
-PATH="$HOME/.config/rofi/scripts:$PATH"
-PATH="$GOPATH/bin:$PATH"
+PATH="$GOBIN:$PATH"
 export PATH
 
 export GOPRIVATE=gitlab.sprydev.ru
