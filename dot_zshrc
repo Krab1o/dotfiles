@@ -106,6 +106,7 @@ export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 
 PATH="$GOBIN:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 export PATH
 
 export GOPRIVATE=gitlab.sprydev.ru

@@ -1,4 +1,4 @@
-if false then
+if true then
   return {
     'zbirenbaum/copilot.lua',
     cmd = 'Copilot',
