@@ -164,3 +164,7 @@ setopt hist_find_no_dups
 
 # Completion styling
 zstyle ':comletion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+if [ -z "$TMUX" ]; then
+    tmux attach-session -t main || tmux new-session -s main
+fi
