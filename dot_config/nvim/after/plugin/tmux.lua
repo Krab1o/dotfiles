@@ -1,0 +1,1 @@
+-- Replaced by smart-splits (after/plugin/smart-splits.lua)
