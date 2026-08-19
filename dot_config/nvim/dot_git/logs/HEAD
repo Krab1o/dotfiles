@@ -10,3 +10,5 @@ e12898c5c0bed77b269834d06f35e80179dcc353 99d5c5d822c3c0294aed4775ea9bfb8781ec84a
 44e6ab4ba5780f35e2619990f94d4c7bf81bf889 44e6ab4ba5780f35e2619990f94d4c7bf81bf889 Krab1o <bogdansils@gmail.com> 1782990958 +0300	reset: moving to HEAD
 44e6ab4ba5780f35e2619990f94d4c7bf81bf889 a8a7dc73a108c60b7d7f7ba0ad929dd9521ebdee Krab1o <bogdansils@gmail.com> 1782991065 +0300	commit: Last updates
 a8a7dc73a108c60b7d7f7ba0ad929dd9521ebdee f75e3fd1ab89a1c588e2b8a3753d4e964c214c3b Krab1o <bogdansils@gmail.com> 1783107607 +0300	commit: Added fugitive-git
+f75e3fd1ab89a1c588e2b8a3753d4e964c214c3b 62eb1dbd6418a52fcaa8f5b2868d0c96bf4e00d5 Krab1o <bogdansils@gmail.com> 1786448267 +0300	commit: treesitter added
+62eb1dbd6418a52fcaa8f5b2868d0c96bf4e00d5 d0bfb4e3ec1dbd53fe77aace2190c52749a21ba9 Krab1o <bogdansils@gmail.com> 1787160866 +0300	commit: added debugger

@@ -145,6 +145,15 @@ vim.pack.add {
   { src = 'https://github.com/tpope/vim-fugitive' },
 }
 
+-- DAP (Debug Adapter Protocol) — отладка Go через delve
+vim.pack.add {
+  { src = 'https://github.com/mfussenegger/nvim-dap' },
+  { src = 'https://github.com/rcarriga/nvim-dap-ui' },
+  { src = 'https://github.com/nvim-neotest/nvim-nio' }, -- dep для dap-ui
+  { src = 'https://github.com/leoluz/nvim-dap-go' },
+  { src = 'https://github.com/theHamsta/nvim-dap-virtual-text' },
+}
+
 --
 -- TODO: try oil.nvim (instead of neo-tree)
 --

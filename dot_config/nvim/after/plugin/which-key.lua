@@ -44,5 +44,6 @@ require('which-key').setup {
     { '<leader>/', group = 'Current Buzzy Finder' },
     { '<leader>m', group = 'Map Hotkeys' },
     { '<leader>g', group = '[G]it' },
+    { '<leader>d', group = '[D]ebug' },
   },
 }
