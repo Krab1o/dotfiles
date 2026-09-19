@@ -121,7 +121,7 @@ PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 export PATH
 
-export GOPRIVATE=gitlab.sprydev.ru
+export GOPRIVATE=gitlab.sprydev.ru,gitlab.cyberchef.tech/*
 #
 #
 # export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
