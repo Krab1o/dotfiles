@@ -13,6 +13,8 @@ require('conform').setup {
     c = { 'clang-format' },
     cpp = { 'clang-format' },
 
+    proto = { 'buf' },
+
     go = {
       'gofmt',
       'gofumpt',
@@ -36,6 +38,10 @@ require('conform').setup {
   },
 
   formatters = {
+    buf = {
+      command = require('conform.util').find_executable({ 'bin/buf' }, 'buf'),
+    },
+
     shfmt = {
       append_args = { '-i', '2' },
     },

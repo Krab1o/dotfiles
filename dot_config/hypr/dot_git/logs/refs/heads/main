@@ -1,2 +1,3 @@
 0000000000000000000000000000000000000000 e7684f177bead104d201f7c458f4ad02cfdf556f Krab1o <bogdansils@gmail.com> 1786026492 +0300	commit (initial): initial commit
 e7684f177bead104d201f7c458f4ad02cfdf556f 14c2a73619d821a2147b8e1e9c95fe16093c9439 Krab1o <bogdansils@gmail.com> 1789815720 +0300	commit: lua migration
+14c2a73619d821a2147b8e1e9c95fe16093c9439 771fad9b2d20151c5ff31fe5e48683b36b3c60e9 Krab1o <bogdansils@gmail.com> 1793439714 +0300	commit: visual var value fix
